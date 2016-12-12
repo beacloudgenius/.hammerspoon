@@ -1,0 +1,3 @@
+[submodule "anycomplete"]
+	path = anycomplete
+	url = https://github.com/nathancahill/anycomplete.git
