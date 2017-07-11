@@ -62,6 +62,14 @@ local available_browsers = {
         name = "FirefoxDeveloperEdition",
         icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/firefox.png"
     },
+    ["org.mozilla.firefox"] = {
+        name = "Firefox",
+        icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/firefox.png"
+    },
+    ["com.google.Chrome.canary"] = {
+        name = "Google Chrome Canary",
+        icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/chrome.png"
+    },
     ["com.google.chrome"] = {
         name = "Google Chrome",
         icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/chrome.png"
