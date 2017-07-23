@@ -54,6 +54,10 @@ end
 local active_browser     = hs.settings.get("active_browser") or "com.apple.safari"
 local browser_menu       = hs.menubar.new()
 local available_browsers = {
+    ["com.apple.SafariTechnologyPreview"] = {
+        name = "Safari Technology Preview",
+        icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/safari.png"
+    },
     ["com.apple.safari"] = {
         name = "Safari",
         icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/safari.png"
