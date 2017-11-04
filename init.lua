@@ -54,6 +54,10 @@ end
 local active_browser     = hs.settings.get("active_browser") or "com.apple.safari"
 local browser_menu       = hs.menubar.new()
 local available_browsers = {
+    ["com.apple.SafariTechnologyPreview"] = {
+        name = "Safari Technology Preview",
+        icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/safari.png"
+    },
     ["com.apple.safari"] = {
         name = "Safari",
         icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/safari.png"
@@ -61,6 +65,14 @@ local available_browsers = {
     ["org.mozilla.firefoxdeveloperedition"] = {
         name = "FirefoxDeveloperEdition",
         icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/firefox.png"
+    },
+    ["org.mozilla.firefox"] = {
+        name = "Firefox",
+        icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/firefox.png"
+    },
+    ["com.google.Chrome.canary"] = {
+        name = "Google Chrome Canary",
+        icon = os.getenv("HOME") .. "/.hammerspoon/browsermenu/chrome.png"
     },
     ["com.google.chrome"] = {
         name = "Google Chrome",
